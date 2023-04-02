@@ -6,6 +6,7 @@ import { useMutateTask } from '../hooks/useMutateTask'
 
 export const TaskForm = () => {
   const { editedTask } = useStore()
+  console.log(editedTask)
   const update = useStore((state) => state.updateEditedTask)
   const { createTaskMutation, updateTaskMutation } = useMutateTask()
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
