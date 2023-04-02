@@ -6,6 +6,7 @@ import { TaskItem } from './TaskItem'
 export const TaskList = () => {
   const { data: tasks, status } = useQueryTasks()
   if (status === 'loading') return <Loader my="lg" color="cyan" />
+  
   return (
     <List
       my="lg"
